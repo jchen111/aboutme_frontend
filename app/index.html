@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Jiaqi Chen</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="styles/css/bootstrap.css" rel="stylesheet" />
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="styles/css/font-awesome.min.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="styles/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+    <!--END HEAD SECTION -->
+<body ng-app="aboutmeApp" ng-controller="MainCtrl">
+     <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">{{name}}</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header-section">HOME</a></li>
+                    <li><a href="#about-section">ABOUT</a></li>
+                    <li><a href="#products-section">MY-WORK</a></li>
+                    <li><a href="#contact-section">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+     <!--END NAV SECTION -->
+     <!-- HEADER SECTION -->
+    <div id="header-section">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1><strong> {{name}}</strong>
+
+                    </h1>
+                     <br /> <br /> <br />
+                    <h2> {{ title }}</h2>
+                     <br />
+                  <a href="#about-section">  <i class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+      <!--END HEADER SECTION -->
+    <!--ABOUT SECTION -->
+    <div id="about-section" >
+        <div class="container" >
+            <div class="row main-top-margin text-center">
+                <div class="col-md-8 col-md-offset-2 " data-scrollreveal="enter top and move 100px, wait 0.3s">
+                    <h1>Who Am I ?</h1>
+                    <h4>
+                       {{selfIntroduction}}
+                    </h4>
+                </div>
+            </div>
+            <!-- ./ Main Heading-->
+            <div class="row main-low-margin text-center">
+                <div class="col-md-3 " data-scrollreveal="enter left and move 100px, wait 0.4s">
+                    <img class="img-circle" src="images/team/me.jpg" alt="">
+                    <h4><strong>{{ name }}</strong> </h4>
+                    <p>
+                       <a href="https://www.facebook.com/profile.php?id=100006495012760"><i class="fa fa-facebook-square fa-2x color-facebook"></i></a>
+                        <a href="https://twitter.com/CrazyMaster9010"><i class="fa fa-twitter-square fa-2x color-twitter"></i></a>
+                        <a href="https://plus.google.com/u/1/118156018214031166103/posts"><i class="fa fa-google-plus-square fa-2x color-google-plus"></i></a>
+                        <a href="https://www.linkedin.com/in/jiaqi-chen-951b4158"><i class="fa fa-linkedin-square fa-2x color-linkedin"></i></a>
+                        <a href="https://github.com/jchen111"><i class="fa fa-github-square fa-2x color-github"></i></a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-7 col-sm-7 col-md-offset-1  text-justify" data-scrollreveal="enter right and move 100px, wait 0.4s">
+                    <h3> {{welcome}}</h3>
+                    <p>
+                         {{aboutme}}
+
+                    </p>
+                    <p>
+                      {{personalInterests}}
+                    </p>
+                </div>
+            </div>
+              <!-- ./ Row Content-->
+        </div>
+    </div>
+    <!-- END ABOUT SECTION -->
+
+
+    <!--WORK/PRODUCTS SECTION -->
+    <div id="products-section" >
+         <div class="container" >
+            <div class="row main-top-margin text-center" data-scrollreveal="enter top and move 100px, wait 0.3s">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <h1>My projects</h1>
+                    <h4>
+                       Due to security concerns and disclosure authorization issue, i can not share the detail of the project I participated at target
+                       I can only descripe the outline of them in short.
+                    </h4>
+                </div>
+            </div>
+             <!-- ./ Main Heading-->
+             <hr />
+            <div class="row main-low-margin" >
+              <div class="col-md-10  col-md-offset-1 ">
+                <div class="col-md-4 col-sm-4" data-scrollreveal="enter left and move 100px, wait 0.8s">
+                    <img src="images/product/prd2.png" alt="">
+                </div>
+                <div class="col-md-8 " data-scrollreveal="enter right and move 100px, wait 0.4s">
+                    <h4 >  <strong class="color-red">{{smsAPIProject.name}} </strong></h4>
+                    <p>
+                        {{smsAPIProject.description}}
+                    </p>
+                    <p>
+                      {{smsAPIProject.tech}}
+                    </p>
+                    <p>
+                        {{smsAPIProject.highlight}}
+                    </p>
+                    Key features:
+                    <p>
+                        <i class="fa fa-check"></i> Opt-in/Opt-out<br />
+                     <i class="fa fa-check"></i> message sending <br />
+                       <i class="fa fa-check"></i> key word reply <br />
+                    </p>
+                </div>
+                </div>
+
+            </div>
+            <!-- ./ Row Content-->
+            <hr />
+           <div class="row main-low-margin bottam-pad" >
+
+                 <div class="col-md-10  col-md-offset-1 ">
+                <div class="col-md-8 " data-scrollreveal="enter left and move 100px, wait 0.4s">
+                    <h4 >  <strong class="color-red">{{MITProject.name}}</strong></h4>
+                    <p>
+                        {{MITProject.description}}
+                    </p>
+                    <p>
+                      {{MITProject.tech}}
+                    </p>
+                    <p>
+                        {{MITProject.highlight}}
+                    </p>
+                    Key features:
+                    <p>
+                        <i class="fa fa-check"></i> Customrized JIRA utilization<br />
+                     <i class="fa fa-check"></i> Reporting <br />
+                       <i class="fa fa-check"></i> dockerized<br />
+                    </p>
+                </div>
+                <div class="col-md-4 " data-scrollreveal="enter right and move 100px, wait 0.4s">
+
+                    <img class="img-margin-product" src="images/product/prd3.png" alt="">
+                </div>
+                     </div>
+            </div>
+              <!-- ./ Row Content-->
+        </div>
+    </div>
+    <!--END WORK/PRODUCTS SECTION -->
+    <!--CONTACT SECTION -->
+    <div id="contact-section">
+        <div class="container" >
+            <div class="row main-top-margin text-center">
+                <div class="col-md-8 col-md-offset-2 " data-scrollreveal="enter top and move 100px, wait 0.3s">
+                    <h1>Contact Me</h1>
+                    <h4>
+                       Better career opportunities are always welcome, if you are insterested in contacting me please don't hesitate leave me a message below.
+                       Or if you are also a tech nerd just like me, you are welcome to reach me for knowledge sharing.
+                    </h4>
+                </div>
+            </div>
+            <!-- ./ Main Heading-->
+            <div class="row">
+                <div class="col-md-12  col-sm-12 ">
+                    <div class="col-md-6  " data-scrollreveal="enter left and move 100px, wait 0.4s">
+                        <h3> My Work Location</h3>
+                        <hr />
+                        <p>
+                        50, S 10th St<br />
+                        Minneapolis, Minnesota, 55403<br />
+                        Email: Jiaqi.Chen@target.com<br />
+                            </p>
+
+                    </div>
+                    <div class="col-md-6  " data-scrollreveal="enter right and move 100px, wait 0.4s">
+                        <h3>Shoot me a message </h3>
+                        <hr />
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Name" ng-model="senderName">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="email" ng-model="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" required="required" class="form-control" rows="3"  placeholder="Message" ng-model="message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" ng-style="httpCall" class="btn btn-primary" ng-click="submit()" ng-disabled="disableSendButton">{{httpCallText}}</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+             <!-- ./ Row Content-->
+        </div>
+    </div>
+    <!--END CONTACT SECTION -->
+    <!--FOOTER SECTION -->
+    <!-- <div id="footer">
+        <div class="container">
+            <div class="row ">
+                &copy; 2016 Jiaqi Chen | All Right Reserved
+
+            </div>
+
+        </div>
+
+    </div> -->
+    <!--END FOOTER SECTION -->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY LIBRARY -->
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <script src="scripts/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="scripts/bootstrap.min.js"></script>
+     <!-- SCROLL REVEL LIBRARY FOR SCROLLING ANIMATIONS-->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/scrollReveal.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/services/email.js"></script>
+       <!-- CUSTOM SCRIPT-->
+    <script src="scripts/custom.js"></script>
+</body>
+</html>
