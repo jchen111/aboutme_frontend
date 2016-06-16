@@ -1,0 +1,2 @@
+docker run -d -p 9000:80 --name aboutme_container --net aboutme_network aboutmefrontend_image /usr/sbin/apache2ctl -D FOREGROUND
+docker run --name abackend_container -p 8080:8080 -d -t aboutmebackend/aboutmebackend-image
