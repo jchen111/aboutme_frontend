@@ -12,7 +12,7 @@ angular.module('aboutmeApp').factory('email',['$http',function ($http) {
   services.sendEmail = function (name, email, text) {
     var req = {
       method: 'POST',
-      url: 'http://192.168.99.100:8080/aboutme/v1/emails',
+      url: '/aboutme/v1/emails',
       headers: {
         'Content-Type': 'application/json'
       },
