@@ -30,6 +30,13 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <!-- <script>
+      $(document).on('click','.navbar-collapse.in',function(e) {
+          if( $(e.target).is('a') ) {
+              $(this).collapse('hide');
+          }
+      });
+    </script> -->
 </head>
     <!--END HEAD SECTION -->
 <body ng-app="aboutmeApp" ng-controller="MainCtrl">
@@ -46,10 +53,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#header-section" data-toggle="collapse" data-target=".nav-collapse.in">HOME</a></li>
-                    <li><a href="#about-section" data-toggle="collapse" data-target=".nav-collapse.in">ABOUT</a></li>
-                    <li><a href="#products-section" data-toggle="collapse" data-target=".nav-collapse.in">MY-WORK</a></li>
-                    <li><a href="#contact-section" data-toggle="collapse" data-target=".nav-collapse.in">CONTACT</a></li>
+                    <li><a href="#header-section" data-toggle="collapse" data-target=".navbar-collapse.in">HOME</a></li>
+                    <li><a href="#about-section" data-toggle="collapse" data-target=".navbar-collapse.in">ABOUT</a></li>
+                    <li><a href="#products-section" data-toggle="collapse" data-target=".navbar-collapse.in">MY-WORK</a></li>
+                    <li><a href="#contact-section" data-toggle="collapse" data-target=".navbar-collapse.in">CONTACT</a></li>
                 </ul>
             </div>
 
@@ -276,6 +283,7 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
     <script src="scripts/jquery.js"></script>
     <!-- CORE BOOTSTRAP LIBRARY -->
     <script src="scripts/bootstrap.min.js"></script>
